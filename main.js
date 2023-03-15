@@ -37,11 +37,22 @@ document.querySelector(".download").addEventListener("click",()=>{
 		// .catch((error) => {
 		// 	console.error('Error:', error);
 		// });
-
-
-
 })
 
+let arrow = document.querySelector(".arrow-container");
+let head = document.getElementById("head");
+let short = document.getElementById("short");
+short.onclick = function(){
+	head.innerText = "Your video is ready";
+	arrow.style.display = "inline";
+	window.onscroll = function() {
+		if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+		  arrow.style.display = "none";
+		}else{
+		  arrow.style.display = "inline";
+		}
+	  }
+}
 
 
 
