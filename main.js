@@ -46,7 +46,7 @@ short.onclick = function(){
 	head.innerText = "Your video is ready";
 	arrow.style.display = "inline";
 	window.onscroll = function() {
-		if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+		if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
 		  arrow.style.display = "none";
 		}else{
 		  arrow.style.display = "inline";
