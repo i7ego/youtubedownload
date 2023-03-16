@@ -42,16 +42,25 @@ document.querySelector(".download").addEventListener("click",()=>{
 let arrow = document.querySelector(".arrow-container");
 let head = document.getElementById("head");
 let short = document.getElementById("short");
+let vid = document.querySelector(".linkOfVideo");
 short.onclick = function(){
-	head.innerText = "Your video is ready";
-	arrow.style.display = "inline";
-	window.onscroll = function() {
+	if (vid.value==""){
+		head.innerText = "Please Enter a correct URL !";
+		arrow.style.display = "none";
+	// } else if (clik.catch==error){	
+	// 	head.innerText = "Please Enter a correct URL !";
+	// 	arrow.style.display = "none";
+	} else {	
+		head.innerText = "Your video is ready";
+		arrow.style.display = "inline";
+		window.onscroll = function() {
 		if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
 		  arrow.style.display = "none";
 		}else{
 		  arrow.style.display = "inline";
 		}
 	  }
+	}
 }
 
 
