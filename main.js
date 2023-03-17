@@ -21,8 +21,11 @@ document.querySelector(".download").addEventListener("click",()=>{
 		.catch((error) => {
 			console.error('Error:', error);
 		});
+	
 
 
+
+	
 
 		// fetch(`https://api.snappea.com/v1/video/details?url=${link}`, {
 		//   method: 'GET', // or 'PUT'
@@ -53,6 +56,11 @@ short.onclick = function(){
 	} else {	
 		head.innerText = "Your video is ready";
 		arrow.style.display = "inline";
+		window.scroll({
+			top: window.innerHeight,
+			behavior: 'smooth'
+				
+			});
 		window.onscroll = function() {
 		if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
 		  arrow.style.display = "none";
@@ -63,7 +71,24 @@ short.onclick = function(){
 	}
 }
 
+arrow.onclick = function(){
+	window.scroll({
+		top: window.innerHeight,
+		behavior: 'smooth'
+			
+		});
+}
 
+function scrollToSection(sectionId) {
+	var section = document.querySelector(sectionId);
+	window.scroll({
+	  top: section.offsetTop,
+	  behavior: 'smooth'
+	});
+	// setTimeout(function() {
+	//   window.open('about:blank', '_blank');
+	// }, 1000);
+  }
 
 function showAllUrls(AllUrls,img,title){
 	document.querySelector(".LinksDad").innerHTML=`

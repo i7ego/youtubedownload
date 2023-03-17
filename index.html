@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Downloader Online Free<</title>
+    <title>Youtube Downloader Online Free</title>
     <meta name="description" content="The web site for download video from youtube  online for Free."/>
     <meta name="description" content="copy url of video and past for download it."/>
     <meta name="description" content="downloader for youtube videos online for free."/>
@@ -17,17 +17,23 @@
 </head>
 
 <body>
-    
+
     <header>
-        
+            <nav>
+                <ul>
+                  <li><a href="#home" onclick="scrollToSection('#home')">Home</a></li>
+                  <li><a href="#download" onclick="scrollToSection('#download')">Download</a></li>
+                  <li><a href="#contact" onclick="scrollToSection('#contact')">Contact</a></li>
+                </ul>
+              </nav>
+    <section id="home">         
     <div class="head">
         <div><h1 id="head">Youtube Downloader <span style="font-size: 25px;">By Hagag</span></h1></div>
-        <a href="mailto:ahmed.m.hagag22@gmail.com" class="arrow-container" target="_blank"><img src="./imgs/call.png" >
+          <div class="arrow-container">
             <div class="arrow-line"></div>
             <div class="arrow-line2"></div>
-          </a>
-
-
+        </div> 
+    
         <div id="main">
          <input type="text" id="url" class="linkOfVideo" placeholder="Paste the link here" autocomplete="off">
           <button id="short" class="download">Download</button>
@@ -36,14 +42,25 @@
      </div>
 
     </div>
-   
+</section>  
     </header>
 
-
+    <section id="download">
     <div class="LinksDad">
         
     </div>
-    
+    </section>
+
+   <section id="contact" class="form">
+    <h1>Get In Touch With Me!</h1>
+    <form action="https://fabform.io/f/pc33wkP" method="POST">
+        <input type="text" name="First Name" placeholder="Your  First Name" required >
+        <input type="text" name="Last Name" placeholder="Your Last Name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message here" required></textarea>
+        <button type="submit">Send</button>
+    </form>  
+</section>
 </body>
 <script src="main.js"></script>
 </html>
