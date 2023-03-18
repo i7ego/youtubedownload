@@ -90,6 +90,19 @@ function scrollToSection(sectionId) {
 	// }, 1000);
   }
 
+function showForm(){
+	document.querySelector(".form").innerHTML = `
+	<h1>Get In Touch With Me!</h1>
+    <form action="https://fabform.io/f/pc33wkP" method="POST">
+        <input type="text" name="First Name" placeholder="Your  First Name" required >
+        <input type="text" name="Last Name" placeholder="Your Last Name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message here" required></textarea>
+        <button type="submit">Send</button>
+    </form>`;
+};
+
+
 function showAllUrls(AllUrls,img,title){
 	document.querySelector(".LinksDad").innerHTML=`
 	

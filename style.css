@@ -13,7 +13,7 @@ nav {
     top: 0;
     width: 100%;
     text-align: center;
-    
+
   }
  header nav ul  {
     display: inline-block;
@@ -51,9 +51,9 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-        
+
   }
-  
+
   .arrow-container {
     position: fixed;
     bottom: 0;
@@ -64,8 +64,8 @@ header {
     margin: 5px;
     display: none;
   }
- 
- 
+
+
   .arrow-line {
     left: 36px;
     position:absolute;
@@ -74,7 +74,7 @@ header {
     border-radius: 15px;
     transform: rotate(132deg);
   }
-  
+
   .arrow-line2{
     position:absolute;
     width: 50px;
@@ -82,7 +82,7 @@ header {
     border-radius: 15px;
     transform: rotate(47deg)
   }
-  
+
   @keyframes bounce {
       0%   {bottom: -20px;}
       50%  {bottom: 0px;}
@@ -192,7 +192,7 @@ header {
     font-size: 17px;
     padding: 8px;
     text-decoration: none;
-    
+
 }
 
 .form {
@@ -256,7 +256,7 @@ header {
 #contact {
     text-align: center;
     position: relative;
-    top: -41px;
+    top: 24px;
 }
 @media (max-width: 450px){
     .head {
@@ -294,16 +294,16 @@ header {
         width: 95%;
         height: 40px;
         padding: 5px 8px;
-        margin: 10px auto;
+        /* margin: 10px auto; */
     }
     .form textarea {
         width: 95%;
         height: 40px;
         padding: 5px 8px;
-        margin: 10px auto;
+        /* margin: 10px auto; */
         right: 0px;
     }
-    
+
     .form button {
         font-size: 15px;
         height: auto;
