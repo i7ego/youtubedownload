@@ -25,7 +25,17 @@ document.querySelector(".download").addEventListener("click",()=>{
 
 
 
-	
+var connectionMessage = "internet connection";
+var noConnectionMessage = "No internet connection.";
+window.onload = checkInternetConnection;
+function checkInternetConnection() {
+  var isOnLine = navigator.onLine;
+  if (isOnLine) {
+    alert(connectionMessage);
+  } else {
+    alert(noConnectionMessage);
+  }
+}
 
 		// fetch(`https://api.snappea.com/v1/video/details?url=${link}`, {
 		//   method: 'GET', // or 'PUT'
